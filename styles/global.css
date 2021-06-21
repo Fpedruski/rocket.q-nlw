@@ -25,7 +25,7 @@ html {
 
   font-size: 62.5%;
 }
-/* ================================================================= */
+/* ================================================================= Main Elements */
 
 body {
   height: 100vh;
@@ -60,7 +60,8 @@ textarea {
 
 /*================================================================ Input Buttons */
 input,
-button .button {
+button,
+.button {
   border-radius: 0.8rem;
   height: 5rem;
 }
@@ -76,4 +77,34 @@ button,
   justify-content: center;
 
   background: var(--blue);
+  color: var(--white);
+
+  transition: filter 0.2s;
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  filter: brightness(1.2);
+}
+
+button > img .button > img {
+  margin-right: 1rem;
+  width: 2rem;
+}
+
+button.outlined,
+.button.outlined {
+  background: var(--white);
+  color: var(--blue);
+  border: 0.2rem solid var(--blue);
+}
+
+.content header {
+  width: 80%;
+  margin: 3.5rem auto;
+}
+
+.content header img {
+  width: 16.7rem;
 }

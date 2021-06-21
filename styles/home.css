@@ -5,7 +5,7 @@ header {
 
 .content {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 11.4rem 1fr;
 
   grid-template-areas:
@@ -19,13 +19,22 @@ header {
 
 #bg {
   grid-area: left;
-  background: url("/assets/bg-home.svg") no-repeat top/contain;
+  background: url("/assets/bg-home.svg") no-repeat top/cover;
+  z-index: -1;
+  position: relative;
+
+  width: 50rem;
+  height: 50rem;
 }
 
 main {
   grid-area: right;
   display: flex;
   flex-direction: column;
+  margin: 0 2rem 0 2rem;
+  justify-content: center;
+  max-width: 50rem;
+  min-width: 25rem;
 }
 
 main .container {
@@ -42,4 +51,11 @@ main h2 {
 input {
   border: 0.2rem solid var(--grey-blue);
   padding: 0 1.6rem;
+}
+
+input,
+button,
+.button {
+  width: 100%;
+  margin-bottom: 1.8rem;
 }
