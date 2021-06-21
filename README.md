@@ -29,9 +29,9 @@ Develop with this technologies:
 - CSS
 - JavaScript
 - NodeJS
-- Vite
-- Tailwind
-- 
+- EJS
+- Express
+- SQLite
 
 ## 💻 Project
 
