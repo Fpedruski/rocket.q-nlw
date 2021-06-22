@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles/room.css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com ">
@@ -19,7 +19,73 @@
         <body>
             <div id="room" class="content">
                 <header class="header">
+                    <a href="home.html">
                     <img src="assets/logo.svg" alt="Rocket.q" />
+                    </a>
+
+                    <div class="buttons">
+                        <div class="button outlined"> #323243
+                            <img src="/assets/copy.svg" alt="Export" class="icons"/>
+                        </div>
+                        
+                        <a href="#" class="button" >
+                            <img src="assets/users-white.svg" alt="Criar Sala" class="icons">
+                            Criar Sala
+                        </a>
+                    </div>
                 </header>
+                   
+                    
+                    <main>
+                        <section id="question-form">
+                            <h2>Faça sua pergunta</h2>
+                            <form action="#">
+                                <label class="sr-only" id="question">
+                                    O que você quer perguntar?
+                                </label>
+                                <textarea name="question" id="question" placeholder=" O que você quer perguntar?"></textarea>
+
+
+                                <footer>
+                                    <div>
+                                        <img src="/assets/lock-icon.svg" alt="Cadeado" class="icons"/>
+                                        Esta Pegunta é anônima
+                                    </div>
+                                    <button>Enviar</button>
+                                </footer>
+                            </form>
+                        </section>
+
+                        <section id="questions">
+                            <h2 class="sr-only">
+                                Perguntas da comunidade
+                            </h2>
+                            <div class="questions">
+                                <div class="question-wrapper">
+                                    <div class="question-content">
+                                        <div class="user">
+                                            <img src="/assets/avatar-icon.svg" alt="">
+
+                                            <div class="question">
+                                                <p>Qual a diferenca entre const, var, let em Javascript</p>
+                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="action">
+                                        <a href="#">
+                                            <img src="assets/check.svg" alt="">
+                                            Marcar como lida
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/trash.svg" alt="">
+                                            Exluir
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </main>  
         </body>
     </html>

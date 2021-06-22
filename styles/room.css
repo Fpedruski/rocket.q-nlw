@@ -1,0 +1,111 @@
+.content {
+  max-width: min(112rem, 90%);
+}
+
+#room header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#room header .buttons {
+  display: flex;
+  margin-left: 1rem;
+}
+
+#room header .buttons .button:nth-child(1) {
+  margin-right: 0.8rem;
+  padding: 1.3rem 1.6rem;
+}
+
+#room header .buttons .button:nth-child(1) img {
+  margin-left: 1rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+#room header .buttons .button:nth-child(2) {
+  padding: 1.3rem 1.6rem;
+}
+#room header .buttons .button:nth-child(2) img {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* Question FORM */
+#question-form h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  color: var(--black);
+  font-weight: 700;
+  line-height: 4.2rem;
+
+  margin-bottom: 2.4rem;
+}
+
+#question-form form {
+  border: 0.2rem solid var(--grey-blue);
+  padding: 1.6rem;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+  margin-bottom: 1.6rem;
+
+  /*
+  ANCHOR Interesting approach to the box radius, only one is not radius. 
+  
+  ANCHOR Outline is when you dont have inside the text area the selection line.
+  */
+}
+
+#question-form textarea {
+  resize: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+}
+
+#question-from textarea::placeholder {
+  color: var(--grey-blue);
+}
+
+#question-form form footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#question-form form footer > div {
+  display: flex;
+  align-items: center;
+
+  color: var(--icons-details);
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+#question-form button {
+  height: auto;
+  padding: 1rem 3rem;
+  line-height: 2.4rem;
+}
+
+#questions > div > div {
+  border: 0.2rem solid var(--grey-blue);
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+  background: var(--light-blue);
+  height: 13.6rem;
+}
+
+#questions .user {
+  width: 3rem;
+  height: 3rem;
+  background: var(--blue);
+  clip-path: circle();
+}
+
+#qustion action {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
