@@ -90,22 +90,49 @@
   line-height: 2.4rem;
 }
 
-#questions > div > div {
-  border: 0.2rem solid var(--grey-blue);
-  border-radius: 0 0.8rem 0.8rem 0.8rem;
+/********* Questions *********/
+
+.question-wrapper {
   background: var(--light-blue);
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+  margin-bottom: 0.8rem;
   height: 13.6rem;
+  padding: 2.4rem;
+  font-family: "Poppins", sans-serif;
 }
 
-#questions .user {
-  width: 3rem;
-  height: 3rem;
-  background: var(--blue);
-  clip-path: circle();
-}
-
-#qustion action {
+.question-wrapper .question-content {
   display: flex;
-  justify-content: end;
-  align-items: flex-end;
+  align-items: center;
+}
+
+/****** ANCHOR 
+ * Interesting that we have other option to use as werll, 
+ * 
+ *  .question-wrapper .question p{ margin-left: 1rem; 
+ * }
+ * 
+*******/
+.question-wrapper .question {
+  margin-left: 1.6rem;
+}
+
+.question-wrapper .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/***** ANCHOR 
+ * Using '>' to the 'a' element to center and flex the icons and all the items inside the "action class"*****/
+
+.question-wrapper .actions > a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.question-wrapper .actions > a img {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
