@@ -9,6 +9,9 @@
   display: flex;
 
   background: rgba(4, 9, 17, 0.8);
+
+  visibility: hidden;
+  opacity: 0%;
 }
 
 /* Modal White space */
