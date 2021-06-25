@@ -1,0 +1,24 @@
+{
+  "name": "rocket.q-nlw",
+  "version": "1.0.0",
+  "description": "Rocket Seat NLW",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fpedruski/rocket.q-nlw.git"
+  },
+  "keywords": [],
+  "author": "Fpedruski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fpedruski/rocket.q-nlw/issues"
+  },
+  "homepage": "https://github.com/Fpedruski/rocket.q-nlw#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
