@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles/room.css">
+        <link rel="stylesheet" href="styles/modal.css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com ">
 
@@ -34,8 +35,6 @@
                         </a>
                     </div>
                 </header>
-                   
-                    
                     <main>
                         <section id="question-form">
                             <h2>Faça sua pergunta</h2>
@@ -64,7 +63,7 @@
                                 <div class="question-wrapper">
                                     <div class="question-content">
                                         <div class="user">
-                                            <img src="/assets/avatar-icon.svg" alt="">
+                                            <img src="/assets/avatar-solo.svg" alt="">
                                         </div>
                                             <div class="question">
                                                 <p>Qual a diferenca entre const, var, let em Javascript</p>
@@ -73,24 +72,26 @@
                                         
                                     </div>
                                     <div class="actions">
-                                        <a href="#">
+                                        <a href="#" class="check">
 
-                                            <img src="assets/check.svg" alt="">
+                                            <img src="assets/check.svg" alt="Marcar como lida">
                                             Marcar como lida
 
                                         </a>
-                                        <a href="#">
+                                        <a href="#" class="delete">
 
-                                            <img src="assets/trash.svg" alt="">
+                                            <img src="assets/trash.svg" alt="delete">
                                             Exluir
 
                                         </a>
                                     </div>
                                 </div>
+
+
                                 <div class="question-wrapper">
                                     <div class="question-content">
                                         <div class="user">
-                                            <img src="/assets/avatar-icon.svg" alt="">
+                                            <img src="/assets/avatar-solo.svg" alt="">
                                         </div>
                                             <div class="question">
                                                 <p>Qual a diferenca entre const, var, let em Javascript</p>
@@ -98,24 +99,52 @@
                                         
                                     </div>
                                     <div class="actions">
-                                        <a href="#">
+                                        <a href="#" class="check">
 
-                                            <img src="assets/check.svg" alt="">
+                                            <img src="assets/check.svg" alt="Marcar como lida">
                                             Marcar como lida
 
                                         </a>
-                                        <a href="#">
+                                        <a href="#" class="delete">
 
-                                            <img src="assets/trash.svg" alt="">
+                                            <img src="assets/trash.svg" alt="delete">
                                             Exluir
 
                                         </a>
                                     </div>
                                 </div>
+                                
                                 <div class="question-wrapper">
                                     <div class="question-content">
                                         <div class="user">
-                                            <img src="/assets/avatar-icon.svg" alt="">
+                                            <img src="/assets/avatar-solo.svg" alt="">
+                                        </div>
+                                            <div class="question">
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque minus corrupti aspernatur eius autem sint accusantium ipsa fuga, vitae architecto cumque nemo assumenda, laboriosam molestias, quisquam fficia! Non, natus aspernatur. lorem ipsum dolor sit amet, consect lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni non, sed asperiores sint maxime molestias veniam fuga necessitatibus. Voluptatibus consectetur voluptatum quam ad porro non nam doloremque aut. Corrupti?                                                     
+                                                </p>
+                                            </div>
+                                        
+                                    </div>
+                                    <div class="actions">
+                                        <a href="#" class="check">
+
+                                            <img src="assets/check.svg" alt="Marcar como lida">
+                                            Marcar como lida
+
+                                        </a>
+                                        <a href="#" class="delete">
+
+                                            <img src="assets/trash.svg" alt="delete">
+                                            Exluir
+
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="question-wrapper">
+                                    <div class="question-content ">
+                                        <div class="user">
+                                            <img src="/assets/avatar-solo.svg" alt="">
                                         </div>
                                             <div class="question">
                                                 <p>O que é TypeScript?</p>
@@ -123,16 +152,10 @@
                                         
                                     </div>
                                     <div class="actions">
-                                        <a href="#">
-
-                                            <img src="assets/check.svg" alt="">
-                                            Marcar como lida
-
                                         </a>
-                                        <a href="#">
-
-                                            <img src="assets/trash.svg" alt="">
-                                            Exluir
+                                        <a href="#" class="checked">
+                                            <img src="assets/check.svg" alt="check">
+                                            Pergunta lida
 
                                         </a>
                                     </div>
@@ -141,5 +164,20 @@
                         </section>
 
                     </main>  
+                </div>
+            <div class="modal-wrapper">
+                <div class="modal">
+                <h2>Excluir pergunta</h2>
+                <p>Tem certeza que quer excluir?</p>
+                <form action="#">
+                    <label class="sr-only" for-id="password"> Digite sua senha admin</label>
+                    <input type="password" name="password" id="password"placeholder="Digite sua senha admin">
+                    <div class="buttons">
+                        <div class="button gray">Cancelar</div>
+                        <button class="red">Sim, Exluir</button>
+                    </div>
+                </form>
+                </div>
+            </div>
         </body>
     </html>

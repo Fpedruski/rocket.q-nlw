@@ -45,7 +45,7 @@
 }
 
 #question-form form {
-  border: 0.2rem solid var(--grey-blue);
+  border: 0.2rem solid var(--gray-blue);
   padding: 1.6rem;
   border-radius: 0 0.8rem 0.8rem 0.8rem;
   margin-bottom: 1.6rem;
@@ -96,14 +96,28 @@
   background: var(--light-blue);
   border-radius: 0 0.8rem 0.8rem 0.8rem;
   margin-bottom: 0.8rem;
-  height: 13.6rem;
+
   padding: 2.4rem;
   font-family: "Poppins", sans-serif;
+}
+
+/*ANCHOR takes the last text area to set a margin under*/
+
+.question-wrapper:last-child {
+  margin-bottom: 2rem;
 }
 
 .question-wrapper .question-content {
   display: flex;
   align-items: center;
+}
+
+.question-wrapper .question-content .user {
+  clip-path: circle();
+  background: var(--blue);
+  height: 5.2rem;
+  width: 5.2rem;
+  padding: 1.3rem;
 }
 
 /****** ANCHOR 
@@ -112,9 +126,14 @@
  *  .question-wrapper .question p{ margin-left: 1rem; 
  * }
  * 
+ * Interesting to set break word in the global setting!!
 *******/
-.question-wrapper .question {
+.question-wrapper .question p {
   margin-left: 1.6rem;
+  word-break: break-word;
+  min-height: 5.2rem;
+  display: flex;
+  align-items: center;
 }
 
 .question-wrapper .actions {
@@ -134,5 +153,20 @@
 
 .question-wrapper .actions > a img {
   margin-right: 0.5rem;
-  margin-left: 0.5rem;
+}
+
+/***** ANCHOR 
+ * ! Using '+' to the 'a' we attach the "brother" from the tag firstly set *****/
+
+.question-wrapper .actions > a + a {
+  margin-left: 2.4rem;
+}
+
+.read {
+  background: var(--gray-medium);
+}
+
+/* NOTE Just to remind that when you want to use a class within a other, the next class go together */
+.question-wrapper.read .question-content .user {
+  background: var(--gray-blue);
 }
