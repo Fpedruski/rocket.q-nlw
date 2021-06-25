@@ -1,7 +1,7 @@
 /** Import express */
 const express = require("express");
 
-/** Import route to require ./route.js and use the file to work*/
+/** Import route to require ./route.js a file to route all the necessary links inside our html*/
 const route = require("./route");
 
 /** Needeto import to be possible to set the route */

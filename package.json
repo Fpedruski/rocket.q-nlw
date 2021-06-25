@@ -4,7 +4,7 @@
   "description": "Rocket Seat NLW",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
