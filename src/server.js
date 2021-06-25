@@ -13,6 +13,7 @@ const server = express();
 /** Set a view engine to show the work, in another words who is in charge of the view engine?*/
 server.set("view engine", "ejs");
 
+/** Using the static path from the public folder */
 server.use(express.static("public"));
 
 /*
