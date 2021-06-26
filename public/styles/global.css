@@ -70,12 +70,14 @@ button,
 .button {
   border-radius: 0.8rem;
   height: 5rem;
+  border-color: var(--gray-dark);
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+  border-color: var(--gray-dark);
 }
 
 input[type="number"] {
@@ -118,6 +120,7 @@ button.outlined,
   background: var(--white);
   color: var(--blue);
   border: 0.2rem solid var(--blue);
+  visibility: none;
 }
 
 button.red {

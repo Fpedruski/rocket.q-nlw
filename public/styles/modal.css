@@ -1,20 +1,22 @@
-/* Background Modal */
+.modal-wrapper.active {
+  visibility: visible;
+  opacity: 1;
+}
 
 .modal-wrapper {
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
-  right: 0;
+  left: 0;
   display: flex;
 
   background: rgba(4, 9, 17, 0.8);
 
   visibility: hidden;
-  opacity: 0%;
+  opacity: 0;
 }
 
-/* Modal White space */
 .modal-wrapper .modal {
   width: min(59rem, 90%);
   background: var(--white);

@@ -65,7 +65,7 @@
 }
 
 #question-from textarea::placeholder {
-  color: var(--grey-blue);
+  color: var(--gray-blue);
 }
 
 #question-form form footer {
