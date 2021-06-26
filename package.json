@@ -2,9 +2,9 @@
   "name": "rocket.q-nlw",
   "version": "1.0.0",
   "description": "Rocket Seat NLW",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "nodemon ."
   },
   "repository": {
     "type": "git",

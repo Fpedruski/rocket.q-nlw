@@ -39,7 +39,7 @@ O Rocket.Q é uma aplicação de interação através de perguntas, sendo possí
 
 ## 🔖 Layout
 
-[Figma Link] (https://www.figma.com/file/vp3iFfd1ohCbHyDX9jCiQi/Roquet.q)
+[Figma Link](https://www.figma.com/file/vp3iFfd1ohCbHyDX9jCiQi/Roquet.q)
 
 ## :memo: License
 
@@ -49,6 +49,4 @@ License of MIT. Check out the [LICENSE](.github/LICENSE.md) for more info.
 
 Conclude with ♥ by Fpedruski:wave:
 
-
 With a ton of help from [RocketSeat](https://rocketseat.com.br)
-
