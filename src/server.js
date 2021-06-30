@@ -26,6 +26,8 @@ server.use(express.static("public"));
 
 server.set("views", path.join(__dirname, "views"));
 
+server.use(express.urlencoded({extended: true}))
+
 /** Request express to use route */
 server.use(route);
 
